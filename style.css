@@ -5,6 +5,29 @@
     text-decoration: none;
 }
 
+body {
+    background-color: #9DCBBA;
+}
+
+header {
+    background-color: #011627;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+main {
+    background-color: white;
+    width: 1100px;
+    margin: auto;
+}
+
+ul {
+    list-style-position: inside;
+}
+
 section {
     padding-top: 30vh;
     padding-bottom: 30vh;
@@ -30,6 +53,14 @@ section {
     position: absolute; /* Adicione esta linha */
     top: 50%; /* Ajuste conforme necessário */
     left: 50%; /* Ajuste conforme necessário */
-    transform: translate(-50%, -72%); /* Centralize a imagem */
+    transform: translate(-50%, -52%); /* Centralize a imagem */
     z-index: 2; /* Coloque a imagem na frente */
+}
+
+footer {
+    background-color: #011627;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
