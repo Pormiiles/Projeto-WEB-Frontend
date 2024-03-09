@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+section {
+    padding-top: 30vh;
+    padding-bottom: 30vh;
+    line-height: 2em;
+    padding-left: 30px;
+}
+
+.imagem {
+    background-color: rgb(51, 51, 51);
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.416);
+    background-attachment: fixed;
+}
+
+#img1 {
+    background-image: url(imagens/PixelBackground.png);
+    background-position: right center;
+    background-size: cover;
+    z-index: 1; /* Adicione esta linha */
+}
+
+#img2 {
+    position: absolute; /* Adicione esta linha */
+    top: 50%; /* Ajuste conforme necessário */
+    left: 50%; /* Ajuste conforme necessário */
+    transform: translate(-50%, -72%); /* Centralize a imagem */
+    z-index: 2; /* Coloque a imagem na frente */
+}
