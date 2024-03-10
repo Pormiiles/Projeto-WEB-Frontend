@@ -1,6 +1,12 @@
+@font-face { /* Incorporando fontes baixadas ao projeto */
+    font-family: 'DePixel-Breit';
+    src: url(fontes/DePixelBreit.otf) format('opentype'),
+    url(fontes/DePixelBreit.ttf) format('truetype');
+}
+
 @font-face {
-    font-family: 'DePixel';
-    src: url();
+    font-family: 'DePixel-Halbfett';
+    src: url(fontes/DePixelHalbfett.otf) format('opentype'), url(fontes/DePixelHalbfett.ttf) format('truetype');
 }
 
 * {
@@ -21,6 +27,20 @@ body {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+}
+
+h2 {
+    font-family: 'DePixel-Halbfett';
+}
+
+h3, h4 {
+    font-family: 'DePixel-Halbfett';
+    font-size: 12px;    
+}
+
+p, ul > li {
+    font-family: 'DePixel-Breit';
+    font-size: 12px;
 }
 
 .conteudo {
