@@ -22,18 +22,26 @@ body {
 
 .cabecalho {
     background-color: #011627;
-    height: 150px;
+    height: 130px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 650px;
     align-items: center;
+
+    /* Fixando o cabeçalho */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 h2 {
     font-family: 'DePixel-Halbfett';
 }
 
-h3, h4 {
+h3, h4, .cabecalho-nav > a {
     font-family: 'DePixel-Halbfett';
     font-size: 12px;    
 }
@@ -43,10 +51,24 @@ p, ul > li {
     font-size: 12px;
 }
 
+.cabecalho-nav > a {
+    margin: 0px 10px;
+    color: white;
+    padding: 10px;
+}
+
+.cabecalho-nav > a:hover {
+    background-color: white;
+    color: #011627;
+    transition-duration: 1s;
+    border-radius: 5px;
+}
+
 .conteudo {
     background-color: white;
     width: 1100px;
     margin: auto;
+    margin-top: 120px; /* Espaçamento entre o conteudo principal e o cabeçalho*/
 }
 
 section {
@@ -67,15 +89,15 @@ section {
     background-image: url(imagens/PixelBackground.png);
     background-position: right center;
     background-size: cover;
-    z-index: 1; /* Adicione esta linha */
+    z-index: 1; 
 }
 
 #conteudo-img2 {
-    position: absolute; /* Adicione esta linha */
-    top: 50%; /* Ajuste conforme necessário */
-    left: 50%; /* Ajuste conforme necessário */
-    transform: translate(-50%, -52%); /* Centralize a imagem */
-    z-index: 2; /* Coloque a imagem na frente */
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -54%); 
+    z-index: 2; 
 }
 
 #title1 {
@@ -96,6 +118,10 @@ ul {
 }
 
 .conteudo-3-title {
+    margin: 15px 0px;
+}
+
+.conteudo-3-title-item, .conteudo-4-title-item {
     margin: 15px 0px;
 }
 
@@ -122,9 +148,7 @@ ul {
     padding-top: 15px;
 }
 
-.conteudo-3-title-item, .conteudo-4-title-item {
-    margin: 15px 0px;
-}
+
 
 .conteudo-7-list {
     padding-bottom: 15px;
@@ -132,8 +156,17 @@ ul {
 
 .rodape {
     background-color: #011627;
-    height: 100px;
+    height: 130px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.rodape-prgf {
+    color: white;
+}
+
+body {
+    margin: 0;
+    padding: 0;
 }
