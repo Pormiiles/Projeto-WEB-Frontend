@@ -166,6 +166,11 @@ ul {
     color: white;
 }
 
+.rodape-prgf > a {
+    color: white;
+    text-decoration: underline;
+}
+
 body {
     margin: 0;
     padding: 0;
