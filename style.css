@@ -128,7 +128,7 @@ ul {
     margin: 15px 0px;
 }
 
-.conteudo-4-title, .conteudo-5-title {
+#title2, .conteudo-2-title, .conteudo-4-title, .conteudo-5-title {
     margin: 25px 0px;
     border-top: 2px solid black;
     padding-top: 15px;
