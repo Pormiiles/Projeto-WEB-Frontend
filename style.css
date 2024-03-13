@@ -18,6 +18,8 @@
 
 body {
     background-color: #9cf6f6;
+    margin: 0;
+    padding: 0;
 }
 
 .cabecalho {
@@ -132,8 +134,23 @@ ul {
     padding-top: 15px;
 }
 
-.conteudo-4-prgf {
+.conteudo-4-prgf, .conteudo-5-prgf {
     margin-bottom: 25px;
+}
+
+.conteudo-5 {
+    text-align: center;
+}
+
+.conteudo-5-secao {
+    background-color: #011627;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 685px;
+    height: 415px;
+    border-radius: 5px;
 }
 
 .conteudo-6-title {
@@ -148,8 +165,6 @@ ul {
     border-top: 2px solid black;
     padding-top: 15px;
 }
-
-
 
 .conteudo-7-list {
     padding-bottom: 15px;
@@ -170,9 +185,4 @@ ul {
 .rodape-prgf > a {
     color: white;
     text-decoration: underline;
-}
-
-body {
-    margin: 0;
-    padding: 0;
 }
