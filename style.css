@@ -9,6 +9,18 @@
     src: url(fontes/DePixelHalbfett.otf) format('opentype'), url(fontes/DePixelHalbfett.ttf) format('truetype');
 }
 
+/* Variáveis globais das cores principais */
+:root {
+    --color1: #14a8fe;
+    --color2: #011627;
+
+    /* Cores da PixelArtHistory img */
+    --color3: #db93b0;
+    --color4: #57b6f0;
+    --color5: #f7bfb4;
+}
+
+/* Configuração global */
 * {
     margin: 0;
     padding: 0;
@@ -17,15 +29,16 @@
 }
 
 body {
-    background-color: #9cf6f6;
+    background-color: var(--color1);
     margin: 0;
     padding: 0;
     background-image: url('imagens/mwaayk-art-cloud.jpg');
     background-attachment: fixed;
 }
 
+/* Configuração do header */
 .cabecalho {
-    background-color: #011627;
+    background-color: var(--color2);
     height: 130px;
     display: flex;
     flex-direction: row;
@@ -63,11 +76,12 @@ p, ul > li {
 
 .cabecalho-nav > a:hover {
     background-color: white;
-    color: #011627;
+    color: var(--color2);
     transition-duration: 1s;
     border-radius: 5px;
 }
 
+/* Configuração do main */
 .conteudo {
     background-color: white;
     width: 1100px;
@@ -76,6 +90,7 @@ p, ul > li {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.252);
 }
 
+/* Configurando a seção da imagem (Parallax) */
 section {
     padding-top: 30vh;
     padding-bottom: 30vh;
@@ -117,7 +132,7 @@ section {
     margin: 10px 0px;
 }
 
-
+/* Configuração simples das listas */
 ul {
     list-style-position: inside;
 }
@@ -145,7 +160,7 @@ ul {
 }
 
 .conteudo-5-secao {
-    background-color: #011627;
+    background-color: var(--color2);
     margin: auto;
     display: flex;
     justify-content: center;
@@ -172,8 +187,9 @@ ul {
     padding-bottom: 15px;
 } 
 
+/* Configuração do footer */
 .rodape {
-    background-color: #011627;
+    background-color: var(--color2);
     height: 130px;
     display: flex;
     justify-content: center;
