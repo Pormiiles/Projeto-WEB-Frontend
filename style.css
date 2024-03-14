@@ -20,6 +20,8 @@ body {
     background-color: #9cf6f6;
     margin: 0;
     padding: 0;
+    background-image: url('imagens/mwaayk-art-cloud.jpg');
+    background-attachment: fixed;
 }
 
 .cabecalho {
@@ -28,7 +30,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 650px;
+    gap: 640px;
     align-items: center;
 
     /* Fixando o cabeçalho */
