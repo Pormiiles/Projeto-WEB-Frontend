@@ -72,6 +72,7 @@ p, ul > li {
     margin: 0px 10px;
     color: white;
     padding: 10px;
+    transition-duration: 0.5s;
 }
 
 .cabecalho-nav > a:hover {
@@ -118,6 +119,7 @@ section {
     left: 50%; 
     transform: translate(-50%, -58%); 
     z-index: 2; 
+    width: 600px;
 }
 
 #title1 {
@@ -203,4 +205,42 @@ ul {
 .rodape-prgf > a {
     color: white;
     text-decoration: underline;
+}
+
+/* Reponsividade da página WEB */
+@media screen and (max-width: 768px) {
+    .cabecalho {
+        height: 140px;
+        display: block;
+        text-align: center;
+    }
+
+
+    .conteudo {
+        width: 90%; 
+    }
+
+    section {
+        padding-top: 15vh;
+        padding-bottom: 15vh;
+    }
+
+    #conteudo-img2 {
+        width: 350px;
+        top: 40%; 
+        transform: translate(-50%, -67%);
+    }
+
+    .conteudo-1, .conteudo-2, .conteudo-3, .conteudo-4, .conteudo-5, .conteudo-6, .conteudo-7 {
+        padding: 0px 20px; 
+    }
+
+    .conteudo-5-secao {
+        width: 90%;
+        height: 315px; 
+    }
+
+    .conteudo-6-galeria {
+        text-align: center;
+    }
 }
