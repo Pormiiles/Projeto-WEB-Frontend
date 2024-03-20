@@ -215,20 +215,14 @@ ul {
         text-align: center;
     }
 
-
     .conteudo {
         width: 90%; 
-    }
-
-    section {
-        padding-top: 15vh;
-        padding-bottom: 15vh;
     }
 
     #conteudo-img2 {
         width: 350px;
         top: 40%; 
-        transform: translate(-50%, -67%);
+        transform: translate(-50%, -40%);
     }
 
     .conteudo-1, .conteudo-2, .conteudo-3, .conteudo-4, .conteudo-5, .conteudo-6, .conteudo-7 {
