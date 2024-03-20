@@ -220,7 +220,7 @@ ul {
     }
 
     #conteudo-img2 {
-        width: 350px;
+        width: 400px;
         top: 40%; 
         transform: translate(-50%, -40%);
     }
@@ -232,6 +232,7 @@ ul {
     .conteudo-5-secao {
         width: 90%;
         height: 315px; 
+        margin-bottom: 45px;
     }
 
     .conteudo-6-galeria {
