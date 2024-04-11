@@ -100,26 +100,20 @@ section {
 }
 
 .conteudo-imagem {
-    background-color: rgb(51, 51, 51);
-    color: white;
-    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.252);
-    background-attachment: fixed;
+    height: 100vh; /* Ajusta a altura conforme necessário */
+    display: flex;
+    justify-content: center; /* Alinha horizontalmente ao centro */
+    align-items: center; /* Alinha verticalmente ao centro */
 }
 
 #conteudo-img1 {
-    background-image: url(imagens/PixelBackground.png);
-    background-position: right center;
-    background-size: cover;
-    z-index: 1; 
+    background-image: url('imagens/PixelBackground.png');
+    background-attachment: fixed;
 }
 
 #conteudo-img2 {
-    position: absolute; 
-    top: 50%; 
-    left: 50%; 
-    transform: translate(-50%, -58%); 
-    z-index: 2; 
-    width: 600px;
+    max-width: 100%;
+    height: auto;
 }
 
 #title1 {
@@ -208,7 +202,7 @@ ul {
 }
 
 /* Reponsividade da página WEB */
-@media screen and (max-width: 768px) {
+@media screen and (orientation: portrait) {
     .cabecalho {
         height: 140px;
         display: block;
@@ -226,12 +220,14 @@ ul {
 
     .conteudo-imagem {
         display: flex;
-        justify-content: center; /* Centralizar horizontalmente */
-        align-items: center; /* Centralizar verticalmente */
+        justify-content: center;
+        align-items: center;
+        height: 100%; /* Define a altura da seção para ocupar toda a tela verticalmente */
     }
 
     #conteudo-img2 {
-        max-width: 100%;
+        width: 100%;
+        max-width: 100%; /* Garante que a imagem não exceda a largura da div */
         height: auto;
         display: block;
     }
