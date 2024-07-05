@@ -133,6 +133,32 @@ ul {
     list-style-position: inside;
 }
 
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+ 
+th, td {
+    padding: 8px;
+    border: 1px solid black;
+}
+
+th {
+    background-color: #6e6e6e;
+    color: white;
+    font-weight: bolder;
+}
+
+tbody > tr:nth-child(2n) {
+    background-color: rgb(234, 234, 234);
+    font-weight: bolder;
+}
+
+.genre-col {
+    font-weight: bold;
+}
+
 .conteudo-3-title {
     margin: 15px 0px;
 }
