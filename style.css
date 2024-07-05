@@ -145,7 +145,7 @@ th, td {
 }
 
 th {
-    background-color: #6e6e6e;
+    background-color: var(--color2);
     color: white;
     font-weight: bolder;
 }
