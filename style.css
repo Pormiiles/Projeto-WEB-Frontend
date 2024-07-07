@@ -138,6 +138,8 @@ table {
     width: 100%;
     border-collapse: collapse;
     text-align: center;
+    font-family: 'DePixel-Breit';
+    font-size: 12px;
 }
  
 th, td {
