@@ -72,7 +72,7 @@ p, ul > li {
     margin: 0px 10px;
     color: white;
     padding: 10px;
-    transition-duration: 0.5s;
+    transition-duration: 0.5s; /* Transição dos componentes do header */
 }
 
 .cabecalho-nav > a:hover {
@@ -133,6 +133,7 @@ ul {
     list-style-position: inside;
 }
 
+/* Configuração simples da tabela */
 table {
     width: 100%;
     border-collapse: collapse;
