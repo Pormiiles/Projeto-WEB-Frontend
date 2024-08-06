@@ -30,11 +30,21 @@
     <header class="cabecalho">
         <a href="index.html"><img src="imagens/HeartPixel.png" width="100px" class="cabecalho-img"></a>
 
-        <nav class="cabecalho-nav"> <!--Barra de navegação por links-->
+        <nav class="cabecalho-nav">
             <a href="#galeria" class="cabecalho-nav-item">Galeria</a>
             <a href="https://blog.studiominiboss.com/pixelart" class="cabecalho-nav-item" target="_blank">Tutorial</a>
             <a href="pixel-maker.html" class="cabecalho-nav-item" target="_blank">Pixel Art Maker</a>
         </nav>
+
+        <div class="auth-buttons">
+            <button id="cabecalho-buttons-item1"><a href="screens/login.html">Login</a></button>
+            <button id="cabecalho-buttons-item2"><a href="screens/register.html">Registro</a></button>
+        </div>
+
+        <div class="user-info" style="display: none;">
+            <span id="user-name"></span>
+            <button id="cabecalho-buttons-item3">Logout</button>
+        </div>
     </header>
 
     <main class="conteudo">
@@ -258,5 +268,7 @@
     <footer class="rodape">
         <p class="rodape-prgf">Criado por <a href="https://github.com/Pormiiles">André Lima</a> (Pormiiles).</p> <!--Créditos-->
     </footer>
+
+    <script src="index.js"></script>
 </body>
 </html>

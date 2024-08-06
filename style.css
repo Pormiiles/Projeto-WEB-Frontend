@@ -43,7 +43,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 640px;
+    gap: 220px;
     align-items: center;
 
     /* Fixando o cabeçalho */
@@ -80,6 +80,74 @@ p, ul > li {
     color: var(--color2);
     transition-duration: 1s;
     border-radius: 5px;
+}
+
+#cabecalho-buttons-item1 {
+    width: 80px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0);
+    box-shadow: none;
+    border: 2px solid white;
+    border-radius: 5px;
+    color: white;
+    font-weight: bolder;
+    cursor: pointer;
+    font-family: 'DePixel-Halbfett';
+    font-size: 10px;
+}
+
+#cabecalho-buttons-item2 {
+    width: 80px;
+    height: 50px;
+    background-color: #14a8fe;
+    box-shadow: none;
+    border: 2px solid #14a8fe;
+    border-radius: 5px;
+    color: white;
+    font-weight: bolder;
+    cursor: pointer;
+    font-family: 'DePixel-Halbfett';
+    font-size: 10px;
+    transition: 1s;
+}
+
+#cabecalho-buttons-item3 {
+    width: 80px;
+    height: 50px;
+    background-color: #14a8fe;;
+    box-shadow: none;
+    border: 2px solid #14a8fe;;
+    border-radius: 5px;
+    color: white;
+    font-weight: bolder;
+    cursor: pointer;
+    font-family: 'DePixel-Halbfett';
+    font-size: 10px;
+    transition: 1s;
+}
+
+#cabecalho-buttons-item2:hover, #cabecalho-buttons-item3:hover {
+    transition: 0.5s;
+    background-color: rgba(255, 255, 255, 0);
+    border: 2px solid white;
+    color: white;
+}
+
+#cabecalho-buttons-item1 > a, #cabecalho-buttons-item2 > a {
+    color: inherit;
+}
+
+.auth-buttons, .user-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#user-name {
+    color: white;
+    font-family: 'DePixel-Halbfett';
+    font-size: 10px;
+    text-decoration: underline;
 }
 
 /* Configuração do main */
@@ -233,9 +301,41 @@ tbody > tr:nth-child(2n) {
 /* Reponsividade da página WEB */
 @media screen and (orientation: portrait) {
     .cabecalho {
-        height: 140px;
+        height: fit-content;
         display: block;
         text-align: center;
+        padding: 20px;
+    }
+
+    .cabecalho-img {
+        margin-bottom: 20px;
+    }
+
+    .cabecalho-nav {
+        margin-bottom: 20px;
+    }
+
+    .auth-buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin-top: 25px;
+    }
+
+    .auth-buttons button {
+        flex: 1;
+        padding: 10px;
+        margin: 5px;
+        max-width: 150px;
+    }
+
+    .user-info {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin-top: 20px;
     }
 
     .conteudo {
